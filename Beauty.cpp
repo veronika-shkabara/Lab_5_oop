@@ -1,6 +1,5 @@
 #include "Beauty.h"
 
-// ===== BeautyProduct =====
 
 BeautyProduct::BeautyProduct()
 {
@@ -44,7 +43,6 @@ int BeautyProduct::CreateProduct()
     return 1;
 }
 
-// ===== Lipstick =====
 
 Lipstick::Lipstick()
 {
@@ -67,7 +65,6 @@ int Lipstick::Show()
     return 1;
 }
 
-// ===== Perfume =====
 
 Perfume::Perfume()
 {
@@ -90,7 +87,6 @@ int Perfume::Show()
     return 1;
 }
 
-// ===== LuxuryProduct =====
 
 LuxuryProduct::LuxuryProduct()
 {
@@ -102,7 +98,6 @@ LuxuryProduct::~LuxuryProduct()
     cout << "LuxuryProduct destructor\n";
 }
 
-// ❗ ВИРІШЕННЯ ПРОБЛЕМИ РОМБА (Show)
 int LuxuryProduct::Show()
 {
     cout << "Luxury product:\n";
