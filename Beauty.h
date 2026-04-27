@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-// ===== БАЗОВИЙ КЛАС =====
 class BeautyProduct
 {
 protected:
@@ -24,7 +23,6 @@ protected:
     int CreateProduct();
 };
 
-// ===== 1 НАЩАДОК =====
 class Lipstick : virtual public BeautyProduct
 {
 public:
@@ -34,7 +32,6 @@ public:
     int Show() override;
 };
 
-// ===== 2 НАЩАДОК =====
 class Perfume : virtual public BeautyProduct
 {
 public:
@@ -44,12 +41,11 @@ public:
     int Show() override;
 };
 
-// ===== РОМБ (3 КЛАС) =====
 class LuxuryProduct : public Lipstick, public Perfume
 {
 public:
     LuxuryProduct();
     ~LuxuryProduct();
 
-    int Show() override; // ВАЖЛИВО!
+    int Show() override; 
 };
